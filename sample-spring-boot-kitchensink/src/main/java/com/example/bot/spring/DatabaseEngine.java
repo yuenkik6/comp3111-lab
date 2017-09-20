@@ -24,22 +24,32 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class DatabaseEngine {
+	private final String FILENAME = "/static/database.txt";
+	
 	String search(String text) throws Exception {
+		log.info("DB start!");
+		
 		String result = null;
 		BufferedReader br = null;
 		InputStreamReader isr = null;
 		try {
+			
+			
 			isr = new InputStreamReader(
                     this.getClass().getResourceAsStream(FILENAME));
-			br = new BufferedReader(isr);
-			String sCurrentLine;
 			
-			while (result != null && (sCurrentLine = br.readLine()) != null) {
+			br = new BufferedReader(isr);
+			String sCurrentLine = br.readLine();
+			
+			while (result == null && sCurrentLine != null) {
+				
+				log.info("Stream Read:"+sCurrentLine);
 				String[] parts = sCurrentLine.split(":");
 				if (text.toLowerCase().equals(parts[0].toLowerCase())) {
 					result = parts[1];
 				}
-			}
+				sCurrentLine = br.readLine();
+			} 
 		} catch (IOException e) {
 			log.info("IOException while reading file: {}", e.toString());
 		} finally {
@@ -56,7 +66,4 @@ public class DatabaseEngine {
 			return result;
 		throw new Exception("NOT FOUND");
     }
-	
-	private final String FILENAME = "/static/database.txt";
-
 }
