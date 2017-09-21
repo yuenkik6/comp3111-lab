@@ -27,14 +27,10 @@ public class DatabaseEngine {
 	private final String FILENAME = "/static/database.txt";
 	
 	String search(String text) throws Exception {
-		log.info("DB start!");
-		
 		String result = null;
 		BufferedReader br = null;
 		InputStreamReader isr = null;
 		try {
-			
-			
 			isr = new InputStreamReader(
                     this.getClass().getResourceAsStream(FILENAME));
 			
@@ -42,8 +38,6 @@ public class DatabaseEngine {
 			String sCurrentLine = br.readLine();
 			
 			while (result == null && sCurrentLine != null) {
-				
-				log.info("Stream Read:"+sCurrentLine);
 				String[] parts = sCurrentLine.split(":");
 				if (text.toLowerCase().equals(parts[0].toLowerCase())) {
 					result = parts[1];
