@@ -31,11 +31,11 @@ public class StickerMessage implements Message {
      * Package ID
      */
     @NonNull
-    private final String packageId;
+    private String packageId;
 
     /**
      * Sticker ID
      */
     @NonNull
-    private final String stickerId;
+    private String stickerId;
 }

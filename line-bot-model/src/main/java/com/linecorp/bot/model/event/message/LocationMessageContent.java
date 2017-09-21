@@ -63,4 +63,25 @@ public class LocationMessageContent implements MessageContent {
         this.latitude = latitude;
         this.longitude = longitude;
     }
+
+    @Override
+    public String getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
 }

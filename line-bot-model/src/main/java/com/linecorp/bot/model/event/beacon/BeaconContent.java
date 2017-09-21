@@ -84,4 +84,12 @@ public class BeaconContent {
                + ", type=" + getType()
                + ", deviceMessage=" + getDeviceMessageAsHex() + ')';
     }
+
+    private String getHwid() {
+        return this.hwid;
+    }
+
+    public String getType() {
+        return this.type;
+    }
 }

@@ -90,6 +90,14 @@ public class LineBotProperties {
     @NotNull
     private Handler handler = new Handler();
 
+    public ChannelTokenSupplyMode getChannelTokenSupplyMode() {
+        return channelTokenSupplyMode;
+    }
+
+    public String getChannelToken() {
+        return channelToken;
+    }
+
     @Data
     public static class Handler {
         /**

@@ -32,10 +32,18 @@ public class AudioMessage implements Message {
      *     <li>Max 10 MB</li>
      * </ul>
      */
-    private final String originalContentUrl;
+    private final String originalContentUrl = null;
 
     /**
      * Length of audio file (milliseconds)
      */
-    private final Integer duration;
+    private final Integer duration = null;
+
+    public String getOriginalContentUrl() {
+        return originalContentUrl;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
 }

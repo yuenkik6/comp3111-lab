@@ -77,4 +77,17 @@ public class PostbackAction implements Action {
     public PostbackAction(String label, String data) {
         this(label, data, null);
     }
+
+    @Override
+    public String getLabel() {
+        return label;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public String getText() {
+        return text;
+    }
 }

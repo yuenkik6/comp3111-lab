@@ -38,4 +38,17 @@ public class FileMessageContent implements MessageContent {
         this.fileName = fileName;
         this.fileSize = fileSize;
     }
+
+    public int getFileSize() {
+        return fileSize;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    @Override
+    public String getId() {
+        return id;
+    }
 }

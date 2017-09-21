@@ -56,4 +56,19 @@ public class FollowEvent implements Event, ReplyEvent {
         this.source = source;
         this.timestamp = timestamp;
     }
+
+    @Override
+    public String getReplyToken() {
+        return replyToken;
+    }
+
+    @Override
+    public Source getSource() {
+        return source;
+    }
+
+    @Override
+    public Instant getTimestamp() {
+        return timestamp;
+    }
 }

@@ -49,4 +49,14 @@ public class UnfollowEvent implements Event {
         this.source = source;
         this.timestamp = timestamp;
     }
+
+    @Override
+    public Source getSource() {
+        return source;
+    }
+
+    @Override
+    public Instant getTimestamp() {
+        return timestamp;
+    }
 }

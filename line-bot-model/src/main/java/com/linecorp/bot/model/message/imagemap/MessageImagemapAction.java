@@ -38,4 +38,9 @@ public class MessageImagemapAction implements ImagemapAction {
         this.text = text;
         this.area = area;
     }
+
+    @Override
+    public ImagemapArea getArea() {
+        return this.area;
+    }
 }

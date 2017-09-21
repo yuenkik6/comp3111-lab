@@ -39,20 +39,20 @@ public class ImagemapMessage implements Message {
      *     <li>HTTPS required</li>
      * </ul>
      */
-    private final String baseUrl;
+    private String baseUrl;
 
     /**
      * Alternative text
      */
-    private final String altText;
+    private String altText;
 
     /**
      * Size of base image
      */
-    private final ImagemapBaseSize baseSize;
+    private ImagemapBaseSize baseSize;
 
     /**
      * Action when tapped
      */
-    private final List<ImagemapAction> actions;
+    private List<ImagemapAction> actions;
 }

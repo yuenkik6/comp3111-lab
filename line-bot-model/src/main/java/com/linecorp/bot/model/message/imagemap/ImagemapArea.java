@@ -26,20 +26,20 @@ public class ImagemapArea {
     /**
      * Horizontal position of the tappable area
      */
-    private final int x;
+    private final int x = 0;
 
     /**
      * Vertical position of the tappable area
      */
-    private final int y;
+    private final int y = 0;
 
     /**
      * Width of the tappable area
      */
-    private final int width;
+    private final int width = 0;
 
     /**
      * Height of the tappable area
      */
-    private final int height;
+    private final int height = 0;
 }

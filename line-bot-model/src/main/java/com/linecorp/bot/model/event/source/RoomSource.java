@@ -35,6 +35,11 @@ public class RoomSource implements Source {
     }
 
     @Override
+    public String getUserId() {
+        return userId;
+    }
+
+    @Override
     public String getSenderId() {
         return roomId;
     }

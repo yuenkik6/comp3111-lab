@@ -53,4 +53,18 @@ public class UnknownEvent implements Event {
         this.source = source;
         this.timestamp = timestamp;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    @Override
+    public Source getSource() {
+        return source;
+    }
+
+    @Override
+    public Instant getTimestamp() {
+        return timestamp;
+    }
 }

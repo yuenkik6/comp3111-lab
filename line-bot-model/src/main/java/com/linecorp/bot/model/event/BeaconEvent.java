@@ -65,4 +65,19 @@ public class BeaconEvent implements Event, ReplyEvent {
         this.timestamp = timestamp;
         this.beacon = beacon;
     }
+
+    @Override
+    public Source getSource() {
+        return this.source;
+    }
+
+    @Override
+    public Instant getTimestamp() {
+        return this.timestamp;
+    }
+
+    @Override
+    public String getReplyToken() {
+        return this.replyToken;
+    }
 }

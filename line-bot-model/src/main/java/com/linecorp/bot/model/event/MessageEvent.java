@@ -65,4 +65,19 @@ public class MessageEvent<T extends MessageContent> implements Event, ReplyEvent
         this.message = message;
         this.timestamp = timestamp;
     }
+
+    @Override
+    public Source getSource() {
+        return source;
+    }
+
+    @Override
+    public Instant getTimestamp() {
+        return timestamp;
+    }
+
+    @Override
+    public String getReplyToken() {
+        return replyToken;
+    }
 }

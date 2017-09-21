@@ -45,4 +45,17 @@ public class StickerMessageContent implements MessageContent {
         this.packageId = packageId;
         this.stickerId = stickerId;
     }
+
+    public String getPackageId() {
+        return packageId;
+    }
+
+    public String getStickerId() {
+        return stickerId;
+    }
+
+    @Override
+    public String getId() {
+        return id;
+    }
 }

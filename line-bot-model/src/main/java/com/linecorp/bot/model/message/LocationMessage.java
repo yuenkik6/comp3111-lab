@@ -29,20 +29,20 @@ public class LocationMessage implements Message {
     /**
      * Title
      */
-    private final String title;
+    private String title;
 
     /**
      * Address
      */
-    private final String address;
+    private String address;
 
     /**
      * Latitude
      */
-    private final double latitude;
+    private double latitude;
 
     /**
      * Longitude
      */
-    private final double longitude;
+    private double longitude;
 }

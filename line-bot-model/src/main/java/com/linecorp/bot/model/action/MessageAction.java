@@ -48,4 +48,9 @@ public class MessageAction implements Action {
         this.label = label;
         this.text = text;
     }
+
+    @Override
+    public String getLabel() {
+        return label;
+    }
 }

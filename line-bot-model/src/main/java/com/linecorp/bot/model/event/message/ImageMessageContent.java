@@ -34,4 +34,9 @@ public class ImageMessageContent implements MessageContent {
     public ImageMessageContent(@JsonProperty("id") String id) {
         this.id = id;
     }
+
+    @Override
+    public String getId() {
+        return this.id;
+    }
 }

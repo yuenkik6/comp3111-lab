@@ -33,4 +33,9 @@ public class UnknownMessageContent implements MessageContent {
             @JsonProperty("id") String id) {
         this.id = id;
     }
+
+    @Override
+    public String getId() {
+        return id;
+    }
 }

@@ -33,6 +33,11 @@ public class UserSource implements Source {
     }
 
     @Override
+    public String getUserId() {
+        return userId;
+    }
+
+    @Override
     public String getSenderId() {
         return userId;
     }

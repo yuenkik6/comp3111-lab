@@ -46,4 +46,8 @@ public class ErrorResponse {
         this.message = message;
         this.details = details != null ? details : Collections.emptyList();
     }
+
+    public String getMessage() {
+        return message;
+    }
 }

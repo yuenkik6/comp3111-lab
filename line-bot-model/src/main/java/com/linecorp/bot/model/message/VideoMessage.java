@@ -32,7 +32,7 @@ public class VideoMessage implements Message {
      * <li>Max: 10 MB</li>
      *  </ul>
      */
-    private final String originalContentUrl;
+    private String originalContentUrl;
 
     /**
      * URL of preview image
@@ -43,5 +43,5 @@ public class VideoMessage implements Message {
      *  <li>Max: 1 MB</li>
      * </ul>
      */
-    private final String previewImageUrl;
+    private String previewImageUrl;
 }

@@ -34,4 +34,9 @@ public class AudioMessageContent implements MessageContent {
     public AudioMessageContent(@JsonProperty("id") String id) {
         this.id = id;
     }
+
+    @Override
+    public String getId() {
+        return id;
+    }
 }

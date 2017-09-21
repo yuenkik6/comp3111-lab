@@ -46,4 +46,9 @@ public class GroupSource implements Source {
     public String getSenderId() {
         return groupId;
     }
+
+    @Override
+    public String getUserId() {
+        return userId;
+    }
 }

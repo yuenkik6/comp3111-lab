@@ -32,10 +32,10 @@ public class TemplateMessage implements Message {
     /**
      * Alternative text
      */
-    private final String altText;
+    private String altText;
 
     /**
      * Object with the contents of the template.
      */
-    private final Template template;
+    private Template template;
 }

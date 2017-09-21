@@ -42,4 +42,13 @@ public class URIImagemapAction implements ImagemapAction {
         this.linkUri = linkUri;
         this.area = area;
     }
+
+    public String getLinkUri() {
+        return linkUri;
+    }
+
+    @Override
+    public ImagemapArea getArea() {
+        return area;
+    }
 }

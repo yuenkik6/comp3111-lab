@@ -16,6 +16,8 @@
 
 package com.linecorp.bot.spring.boot;
 
+import static com.linecorp.bot.spring.boot.LineBotProperties.ChannelTokenSupplyMode.FIXED;
+import static com.linecorp.bot.spring.boot.LineBotProperties.ChannelTokenSupplyMode.SUPPLIER;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Documented;

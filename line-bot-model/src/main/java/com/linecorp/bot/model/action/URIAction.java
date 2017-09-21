@@ -49,4 +49,9 @@ public class URIAction implements Action {
         this.label = label;
         this.uri = uri;
     }
+
+    @Override
+    public String getLabel() {
+        return this.label;
+    }
 }

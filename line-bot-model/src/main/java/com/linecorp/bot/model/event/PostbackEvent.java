@@ -64,4 +64,23 @@ public class PostbackEvent implements Event, ReplyEvent {
         this.postbackContent = postbackContent;
         this.timestamp = timestamp;
     }
+
+    @Override
+    public String getReplyToken() {
+        return replyToken;
+    }
+
+    public PostbackContent getPostbackContent() {
+        return postbackContent;
+    }
+
+    @Override
+    public Instant getTimestamp() {
+        return timestamp;
+    }
+
+    @Override
+    public Source getSource() {
+        return source;
+    }
 }

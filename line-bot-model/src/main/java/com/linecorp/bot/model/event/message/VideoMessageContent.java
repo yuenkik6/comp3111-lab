@@ -35,4 +35,9 @@ public class VideoMessageContent implements MessageContent {
         this.id = id;
         this.url = url;
     }
+
+    @Override
+    public String getId() {
+        return this.id;
+    }
 }

@@ -41,15 +41,28 @@ public class ReplyMessage {
     /**
      * replyToken received via webhook
      */
-    private final String replyToken;
+    private String replyToken = null;
 
     /**
      * List of messages.<br>
      * Max: 5
      */
-    private final List<Message> messages;
+    private List<Message> messages = null;
+
+    public ReplyMessage(String replyToken, List<Message> messages) {
+        this.replyToken = replyToken;
+        this.messages = messages;
+    }
 
     public ReplyMessage(String replyToken, Message message) {
         this(replyToken, Collections.singletonList(message));
+    }
+
+    public String getReplyToken() {
+        return replyToken;
+    }
+
+    public List<Message> getMessages() {
+        return messages;
     }
 }
