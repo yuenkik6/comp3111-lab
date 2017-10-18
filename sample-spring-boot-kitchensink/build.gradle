@@ -19,7 +19,7 @@ apply plugin: 'org.springframework.boot'
 dependencies {
     compile project(':line-bot-spring-boot')
     compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
-    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.0.1'
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
 
 }
