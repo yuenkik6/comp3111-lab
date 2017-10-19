@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp3111-lab2.iml" filepath="$PROJECT_DIR$/.idea/modules/comp3111-lab2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/line-bot-api-client/line-bot-api-client.iml" filepath="$PROJECT_DIR$/.idea/modules/line-bot-api-client/line-bot-api-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/line-bot-model/line-bot-model.iml" filepath="$PROJECT_DIR$/.idea/modules/line-bot-model/line-bot-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/line-bot-servlet/line-bot-servlet.iml" filepath="$PROJECT_DIR$/.idea/modules/line-bot-servlet/line-bot-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/line-bot-spring-boot/line-bot-spring-boot.iml" filepath="$PROJECT_DIR$/.idea/modules/line-bot-spring-boot/line-bot-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample-spring-boot-kitchensink/sample-spring-boot-kitchensink.iml" filepath="$PROJECT_DIR$/.idea/modules/sample-spring-boot-kitchensink/sample-spring-boot-kitchensink.iml" />
+    </modules>
+  </component>
+</project>
